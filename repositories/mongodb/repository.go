@@ -38,10 +38,10 @@ func New(uri string) (*Repository, error) {
 		return nil, err
 	}
 
-	dialogs := client.Database("neocortex").Collection("dialogs")
-	views := client.Database("neocortex").Collection("views")
-	actions := client.Database("neocortex").Collection("actions")
-	collections := client.Database("neocortex").Collection("collections")
+	dialogs := client.Database("neocortexdev").Collection("dialogs")
+	views := client.Database("neocortexdev").Collection("views")
+	actions := client.Database("neocortexdev").Collection("actions")
+	collections := client.Database("neocortexdev").Collection("collections")
 
 	// * Creating different 'boxes' for intents, entities, dialog nodes and context variables
 
